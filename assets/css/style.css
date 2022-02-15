@@ -44,7 +44,7 @@
   
 }
 .versAbout p,.fas{
-  font-size: 0.5em;
+  font-size: 1em;
 }
 
 .etoileindex {
@@ -170,8 +170,6 @@ a:hover::after {
   display: flex; 
   width: 100%;
  
-  
-  
 }
 .blocphoto{
   width: 30%;
@@ -213,22 +211,19 @@ a:hover::after {
   padding: 0 50px 0 50px;
   color:#2B3550
   } 
+  
  
 
 /* Debut partie cv */
-/*#bodyCv{
 
-  width: 100%;
-  height: 100vh;
-}*/
-.mainCv{
+ .mainCv{
   
   display: grid;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr, 1fr,1fr;
   gap:50px;
   padding: 50px;
-  
+   
 }
 .titleItems{
   font-family: 'montez',cursive;
@@ -266,7 +261,7 @@ span{
   color:#2B3550
 }
 
-.contact{
+ .contact{
   grid-column: 1/3;
   grid-row:3/4;
   background-color: #2b3550;
@@ -281,7 +276,7 @@ span{
   font-size: 1.5em;
   padding-left: 20px;
   
-}
+} 
 
 .softskills{
   grid-column: 2/3;
@@ -355,4 +350,53 @@ span{
   color: white;
   border-radius:30px;
   height:500px;
+}
+
+@media screen and (max-width: 940px){
+  .h1about{
+    font-size: 60px;
+  }
+  #navbar a{
+    font-size: 15px;
+  }
+  #ui{
+    
+    padding-right:30px;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 768px){
+  #navbar a{
+    font-size: 15px;
+  }
+  #ui{
+    
+    padding-right:30px;
+    font-size: 1.5em;
+  }
+  #mainAbout{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .blocphoto{
+    width: 70%;
+   
+
+  }
+  .bloctexte{
+    width:70%;
+    margin-right: 185px;
+    
+  }
+  @media screen and (max-width: 662px){
+    #navbar a{
+      font-size: 10px;
+    }
+    #ui{
+    
+      padding-right:20px;
+      font-size: 1em;
+    }
+  }
 }
